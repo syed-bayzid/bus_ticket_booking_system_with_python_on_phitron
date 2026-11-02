@@ -35,7 +35,12 @@ class BusSystem:
         bus.book_seat()
         print(f"Ticket booked for {name} on bus {bus_number}.")
     
-    # def show_buses(self):
+    def show_buses(self):
+        if not self.buses:
+            print("No buses available.")
+            return
+        for bus in self.buses:
+            print(f"Bus Number: {bus.number}, Available Seats: {bus.available_seats()}")
     
 # system = BusSystem()
 # system.add_bus("B1", "Dhaka-Bogura", 40)   
