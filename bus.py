@@ -14,11 +14,17 @@ class Bus:
             self.booked_seats += 1
             return True
         else:
-            return False            
+            return False      
+
+        
+
+
+
+
                             
-b = Bus("B101", "Dhaka-Sylhet", 20)
-print(b.book_seat())          # True
-print(b.book_seat())          # True
-print(b.book_seat())          # False
-print(b.book_seat())          # False
-print(b.available_seats())    # 0
+# b = Bus("B101", "Dhaka-Sylhet", 20)
+# print(b.book_seat())          # True
+# print(b.book_seat())          # True
+# print(b.book_seat())          # False
+# print(b.book_seat())          # False
+# print(b.available_seats())    # 0
